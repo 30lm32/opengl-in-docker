@@ -969,7 +969,7 @@ int main(int argc, char **argv)
 
 	glutInitWindowSize(width,height);
 	glutInitWindowPosition(10,10);
-	glutCreateWindow("Ike Moisha Broflovski | Assignment#1 | Erdi �LMEZO�ULLARI");
+	glutCreateWindow("Ike Moisha Broflovski");
 	
 	light();
 

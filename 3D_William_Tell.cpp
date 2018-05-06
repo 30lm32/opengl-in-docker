@@ -1363,10 +1363,6 @@ int main(int argc, char **argv)
 	// enter game mode
 	glutEnterGameMode();
 
-	/*glutInitWindowSize(width,height);
-	glutInitWindowPosition(10,10);
-	glutCreateWindow("Final Project | 3D William Tell | Erdi �LMEZO�ULLARI | Onur �ZEY");*/
-	
 	light();
 
 	glutReshapeFunc(change_size);
