@@ -1348,20 +1348,24 @@ void display(void)
 //main
 int main(int argc, char **argv)
 {
-
 	//this is init function
 	glutInit(&argc, argv);
 	
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH); 
 
-	#ifndef WIN32
-		glutGameModeString("1024x768:32@60");
-	#else
-		glutGameModeString("width=1024;height=768;bpp=32;");
-	#endif
+	// // game mode is starting here 
+	// #ifndef WIN32
+	// 	glutGameModeString("1024x768:32@60");
+	// #else
+	// 	glutGameModeString("width=1024;height=768;bpp=32;");
+	// #endif
 
-	// enter game mode
-	glutEnterGameMode();
+	// // enter game mode
+	// glutEnterGameMode();
+
+	glutInitWindowSize(1024, 768);
+	glutInitWindowPosition(10,10);
+	glutCreateWindow("3D William Tell");
 
 	light();
 
